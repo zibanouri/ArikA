@@ -18,4 +18,14 @@
     .bg-hover-#{$color}:hover {
         background-color: $value;
     }
+
+    .border-#{$color} {
+        border-color: $value;
+    }
+
+    .border-hover-#{$color} {
+        &:hover {
+            border-color: $value;
+        }
+    }
 }

@@ -14,6 +14,14 @@
   background-color: #FE7743;
 }
 
+.border-primary {
+  border-color: #FE7743;
+}
+
+.border-hover-primary:hover {
+  border-color: #FE7743;
+}
+
 .text-secondary {
   color: #273F4F;
 }
@@ -28,6 +36,14 @@
 
 .bg-hover-secondary:hover {
   background-color: #273F4F;
+}
+
+.border-secondary {
+  border-color: #273F4F;
+}
+
+.border-hover-secondary:hover {
+  border-color: #273F4F;
 }
 
 .text-danger {
@@ -46,6 +62,14 @@
   background-color: #ED1944;
 }
 
+.border-danger {
+  border-color: #ED1944;
+}
+
+.border-hover-danger:hover {
+  border-color: #ED1944;
+}
+
 .text-success {
   color: #30ff94;
 }
@@ -60,6 +84,14 @@
 
 .bg-hover-success:hover {
   background-color: #30ff94;
+}
+
+.border-success {
+  border-color: #30ff94;
+}
+
+.border-hover-success:hover {
+  border-color: #30ff94;
 }
 
 .text-warning {
@@ -78,6 +110,14 @@
   background-color: #FFEB00;
 }
 
+.border-warning {
+  border-color: #FFEB00;
+}
+
+.border-hover-warning:hover {
+  border-color: #FFEB00;
+}
+
 .text-info {
   color: #47ffff;
 }
@@ -92,6 +132,14 @@
 
 .bg-hover-info:hover {
   background-color: #47ffff;
+}
+
+.border-info {
+  border-color: #47ffff;
+}
+
+.border-hover-info:hover {
+  border-color: #47ffff;
 }
 
 .text-dark {
@@ -110,6 +158,14 @@
   background-color: #363535;
 }
 
+.border-dark {
+  border-color: #363535;
+}
+
+.border-hover-dark:hover {
+  border-color: #363535;
+}
+
 .text-light {
   color: #dedede;
 }
@@ -124,6 +180,14 @@
 
 .bg-hover-light:hover {
   background-color: #dedede;
+}
+
+.border-light {
+  border-color: #dedede;
+}
+
+.border-hover-light:hover {
+  border-color: #dedede;
 }
 
 .text-grey {
@@ -142,6 +206,14 @@
   background-color: #4C585B;
 }
 
+.border-grey {
+  border-color: #4C585B;
+}
+
+.border-hover-grey:hover {
+  border-color: #4C585B;
+}
+
 .text-white {
   color: #fff;
 }
@@ -158,6 +230,14 @@
   background-color: #fff;
 }
 
+.border-white {
+  border-color: #fff;
+}
+
+.border-hover-white:hover {
+  border-color: #fff;
+}
+
 .text-black {
   color: #000;
 }
@@ -172,6 +252,14 @@
 
 .bg-hover-black:hover {
   background-color: #000;
+}
+
+.border-black {
+  border-color: #000;
+}
+
+.border-hover-black:hover {
+  border-color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */
