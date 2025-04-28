@@ -4,7 +4,18 @@
     .text-#{$color} {
         color: $value;
     }
-    .bg-#{$color}{
+
+    .bg-#{$color} {
+        background-color: $value;
+    }
+
+    .text-hover-#{$color} {
+        &:hover {
+            color: $value;
+        }
+    }
+
+    .bg-hover-#{$color}:hover {
         background-color: $value;
     }
 }
