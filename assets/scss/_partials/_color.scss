@@ -1,0 +1,26 @@
+@use "variables" as*;
+@use "sass:color";
+@use "sass:map";
+
+@function get-shade($hex) {
+    $tone: (
+        "1": color.adjust($hex, $lightness: 40%),
+        "3": color.adjust($hex, $lightness: 20%),
+        "4": color.adjust($hex, $lightness: 10%),
+        "2": color.adjust($hex, $lightness: 30%),
+        "5": $hex,
+        "6": color.adjust($hex, $lightness: -10%),
+        "7": color.adjust($hex, $lightness: -20%),
+        "8": color.adjust($hex, $lightness: -30%),
+        "9": color.adjust($hex, $lightness: -40%),
+    );
+@return $tone
+}
+
+;
+$ziba: (
+);
+
+@each $ariya, $arnika in $colors {
+    $ziba: map.merge($ziba, ($ariya: get-shade($arnika)))
+}
