@@ -1,0 +1,17 @@
+@use "variables" as *;
+@use "sass:math";
+@use "sass:color";
+@use "sass:map";
+
+
+
+
+@function luminance($color){
+    $r: math.div(color.channel($color, "red", $space: rgb),255);
+    $g: math.div(color.channel($color, "green", $space: rgb),255);
+    $b: math.div(color.channel($color, "blue", $space: rgb),255);
+
+    $luminance-value: (
+        0.299 * $r + 0.587 * $g + 0.114 * $b) *255;
+        @return if($luminance-value <128, white, black);
+};

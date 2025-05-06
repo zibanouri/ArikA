@@ -1,5 +1,6 @@
 @use "variables" as*;
-
+@use "sass:map";
+@use "contrast";
 .btn{
     display: inline-block;
     font-family: inherit;
@@ -25,5 +26,26 @@
     }
 }
 
+@each $color, $hexe in $colors {
+    .btn-#{$color} {
+        color: contrast.luminance($hexe);
+        background-color: $hexe;
 
+        &:hover {
+            background-color: rgba($hexe, 0.6);
+        }
+    }
+
+    $hover-opacity: 0.8;
+$focus-opacity: 0.25;
+
+@each $size, $propertys in $button-sizes {
+    .btn-#{$size} {
+        padding: map.get($propertys, "padding");
+        font-size:  map.get($propertys, "font-size");
+        border-radius: map.get($propertys, "border-radius");
+
+    }
+}
+}
 

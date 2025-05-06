@@ -17,3 +17,31 @@ $colors: (
 
 // button-outline-width: 2px;
 // $button-disable-opacity: 0.65rem;
+$button-sizes: (
+	"xs": ("padding": 0.125rem 0.25rem,
+		"font-size": 0.75rem,
+		"border-radius": 0.1.5rem,
+	),
+
+	"sm": ("padding": 0.25rem 0.5rem,
+		"font-size": 1rem,
+		"border-radius": 0.25rem,
+
+	),
+
+	// "md": ("padding": 0.5rem 1rem,
+	// 	"font-size": 1rem,
+	// 	"border-radius": 0.50rem,
+
+	// ),
+	"lg": ("padding": 0.75rem 1.5rem,
+		"font-size": 1.5rem,
+		"border-radius": 0.75rem,
+	),
+	
+
+	"xl": ("padding": 1rem 1.75rem,
+		"font-size": 1.75rem,
+		"border-radius": 1rem,
+	)
+);
