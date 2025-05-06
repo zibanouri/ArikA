@@ -1,0 +1,26 @@
+@use "variables" as*;
+
+.btn{
+    display: inline-block;
+    font-family: inherit;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+}
+@each $color, $hexe in $colors {
+    .btn-#{$color} {
+        color: ($hexe);
+        background-color: $hexe;
+
+        &:hover {
+            background-color: rgba($hexe, 0.6);
+        }
+    }
+}
