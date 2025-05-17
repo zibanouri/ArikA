@@ -1,0 +1,61 @@
+@use "variables";
+@use"sass:math";
+
+$break_points: (
+    "xs": 0,
+    "sm": 576px,
+    "md": 768px,
+    "lg": 992px,
+    "xl": 1200px,
+    "xxl": 1400px,
+);
+$grid-columns: 12;
+$grid-gutter-widht: 1rem;
+
+.container {
+    width: 100%;
+    padding-right: math.div($grid-gutter-widht, 2);
+    padding-left: math.div($grid-gutter-widht, 2);
+    margin-left: auto;
+    margin-right: auto;
+
+    @each $size, $value in $break_points {
+        @if $size !="xs" {
+            @media (min-width: $value) {
+                max-width: $value;
+            }
+        }
+    }
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: math.div($grid-gutter-widht, 2);
+    padding-left: math.div($grid-gutter-widht, 2);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: math.div($grid-gutter-widht, 2);
+    margin-right: math.div($grid-gutter-widht, 2);
+}
+
+.column {
+    max-width: 100%;
+    flex-basis: 0;
+    flex-grow: 1;
+    padding-right: math.div($grid-gutter-widht, 2);
+    padding-left: math.div($grid-gutter-widht, 2);
+}
+
+@for $i from 1 through $grid-columns {
+    .column-#{$i} {
+        flex: 0 0 math.percentage(math.div($i, $grid-columns));
+        max-width: 0 0 math.percentage(math.div($i, $grid-columns));
+        padding-right: math.div($grid-gutter-widht, 2);
+        padding-left: math.div($grid-gutter-widht, 2);
+    }
+}

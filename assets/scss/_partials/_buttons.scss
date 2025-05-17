@@ -17,7 +17,7 @@
 }
 @each $color, $hexe in $colors {
     .btn-#{$color} {
-        color: ($hexe);
+        color: contrast.luminance($hexe);
         background-color: $hexe;
 
         &:hover {
@@ -27,12 +27,14 @@
 }
 
 @each $color, $hexe in $colors {
-    .btn-#{$color} {
-        color: contrast.luminance($hexe);
-        background-color: $hexe;
+    .btn-outline-#{$color} {
+        color: $hexe;
+        background-color:transparent;
+        border: 1px solid $hexe;
 
         &:hover {
-            background-color: rgba($hexe, 0.6);
+            background-color: $hexe;
+            color:  contrast.luminance($hexe);
         }
     }
 
