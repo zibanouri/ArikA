@@ -1,3 +1,8 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 $colors: (
 	'primary': #FE7743,
 	'secondary': #273F4F,
@@ -38,7 +43,7 @@ $button-sizes: (
 		"font-size": 1.5rem,
 		"border-radius": 0.75rem,
 	),
-	
+
 
 	"xl": ("padding": 1rem 1.75rem,
 		"font-size": 1.75rem,
