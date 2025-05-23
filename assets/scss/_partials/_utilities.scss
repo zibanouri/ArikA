@@ -1,0 +1,170 @@
+@use "variables" as *;
+@use "sass:math";
+@use "sass:map";
+
+$utilities: (
+    "padding": ("prefix": "padding",
+        "values":("0": 0,
+            "1":$base-padding,
+            "2":$base-padding * 2,
+            "3":$base-padding * 4,
+            "4":$base-padding * 6,
+            "5":$base-padding * 8,
+        )
+   ),
+"padding-right":(
+    "prefix": "padding-right",
+    "values":(
+         "0": 0,
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 4,
+            "4": $base-padding * 6,
+            "5": $base-padding * 8
+    )
+),
+"padding-left": (
+        "prefix": "padding-left",
+        "values": (
+            "0": 0,
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 4,
+            "4": $base-padding * 6,
+            "5": $base-padding * 8
+        )
+    ),
+    "padding-bottom": (
+        "prefix": "padding-bottom",
+        "values": (
+            "0": 0,
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 4,
+            "4": $base-padding * 6,
+            "5": $base-padding * 8
+        )
+    ),
+     "padding-top": (
+        "prefix": "padding-top",
+        "values": (
+            "0": 0,
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 4,
+            "4": $base-padding * 6,
+            "5": $base-padding * 8
+        )
+    ),
+    "margin": (
+        "prefix": "margin",
+        "values": (
+            "0": 0,
+            "1": $base-margin,
+            "2": $base-margin * 2,
+            "3": $base-margin * 4,
+            "4": $base-margin * 6,
+            "5": $base-margin * 8
+        )
+    ),
+    "margin-right": (
+        "prefix": "margin-right",
+        "values": (
+            "0": 0,
+            "1": $base-margin,
+            "2": $base-margin * 2,
+            "3": $base-margin * 4,
+            "4": $base-margin * 6,
+            "5": $base-margin * 8
+        )
+    ),
+    "margin-left": (
+        "prefix": "margin-left",
+        "values": (
+            "0": 0,
+            "1": $base-margin,
+            "2": $base-margin * 2,
+            "3": $base-margin * 4,
+            "4": $base-margin * 6,
+            "5": $base-margin * 8
+        )
+    ),
+    "margin-bottom": (
+        "prefix": "margin-bottom",
+        "values": (
+            "0": 0,
+            "1": $base-margin,
+            "2": $base-margin * 2,
+            "3": $base-margin * 4,
+            "4": $base-margin * 6,
+            "5": $base-margin * 8
+        )
+    ),
+    "margin-top": (
+        "prefix": "margin-top",
+        "values": (
+            "0": 0,
+            "1": $base-margin,
+            "2": $base-margin * 2,
+            "3": $base-margin * 4,
+            "4": $base-margin * 6,
+            "5": $base-margin * 8
+        )
+    ),
+    "border-radius": (
+        "prefix": "border-radius",
+        "values": (
+            "0": 0,
+            "1": $base-radius,
+            "2": $base-radius * 2,
+            "3": $base-radius * 4,
+            "4": $base-radius * 6,
+            "5": $base-radius * 8
+        )
+    ),
+    "border-top-right-radius": (
+        "prefix": "border-top-right-radius",
+        "values": (
+            "0": 0,
+            "1": $base-radius,
+            "2": $base-radius * 2,
+            "3": $base-radius * 4,
+            "4": $base-radius * 6,
+            "5": $base-radius * 8
+        )
+    ),
+"border-top-left-radius": (
+        "prefix": "border-top-left-radius",
+        "values": (
+            "0": 0,
+            "1": $base-radius,
+            "2": $base-radius * 2,
+            "3": $base-radius * 4,
+            "4": $base-radius * 6,
+            "5": $base-radius * 8
+        )
+    ),
+    "border-bottom-right-radius": (
+        "prefix": "border-bottom-right-radius",
+        "values": (
+            "0": 0,
+            "1": $base-radius,
+            "2": $base-radius * 2,
+            "3": $base-radius * 4,
+            "4": $base-radius * 6,
+            "5": $base-radius * 8
+        )
+    ),
+    "border-bottom-left-radius": (
+        "prefix": "border-bottom-left-radius",
+        "values": (
+            "0": 0,
+            "1": $base-radius,
+            "2": $base-radius * 2,
+            "3": $base-radius * 4,
+            "4": $base-radius * 6,
+            "5": $base-radius * 8
+        )
+    ),
+
+    )
