@@ -1,21 +1,36 @@
 {
-  "name": "arika",
+  "name": "ArikA",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "assets/css/style.css",
+  "style": "assets/css/style.css",
+  "sass": "assets/scss/style.scss",
   "scripts": {
-    "sass": "sass assets/scss/style.scss assets/css/style.css",
-    "wsass": "sass --watch assets/scss/style.scss assets/css/style.css"
+    "build": "sass assets/scss/style.scss assets/css/style.css --style=expanded",
+    "build:min": "sass assets/scss/style.scss assets/css/style.min.css --style=compressed",
+    "watch": "sass --watch assets/scss/style.scss assets/css/style.css --style=expanded",
+    "test": "echo \"Tests coming soon!\" && exit 0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zibanouri/ArikA.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "css",
+    "scss",
+    "framework",
+    "ui",
+    "responsive",
+    "theming",
+    "accessibility",
+    "design-system"
+  ],
+  "author": "Ziba Nouri <https://github.com/zibanouri>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/zibanouri/ArikA/issues"
   },
   "homepage": "https://github.com/zibanouri/ArikA#readme",
-  "description": ""
+  "devDependencies": {
+    "sass": "^1.89.0"
+  }
 }
