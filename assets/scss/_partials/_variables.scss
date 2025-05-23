@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 $colors: (
 	'primary': #FE7743,
 	'secondary': #273F4F,
@@ -50,3 +51,32 @@ $button-sizes: (
 		"border-radius": 1rem,
 	)
 );
+
+
+$button-outline-width: 2px;
+$button-disabled-opacity: 0.65;
+
+$break_points: (
+	"xs": 0,
+	"sm": 576px,
+	"md": 768px,
+	"lg": 992px,
+	"xl": 1200px,
+	"xxl": 1400px,
+	"xxxl": 1600px,
+);
+$grid-columns: 12;
+$grid-gutter-width: 1rem;
+
+$base-padding: 0.5rem;
+$base-radius: 0.5rem;
+$base-margin: 0.5rem;
+$base-font-size: 1rem;
+$font-size-xxs: 0.5 * $base-font-size;
+$font-size-xs: 0.625 * $base-font-size;
+$font-size-sm: 0.75 * $base-font-size;
+$font-size-md: 0.825 * $base-font-size;
+$font-size-lg: 1.125 * $base-font-size;
+$font-size-xl: 1.25 * $base-font-size;
+$font-size-xxl: 1.375 * $base-font-size;
+$font-size-xxxl: 1.5 * $base-font-size;
