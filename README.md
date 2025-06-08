@@ -32,6 +32,6 @@ If you find this project useful, please consider giving it a star ⭐ on GitHub.
 You can reach out to me via the following channels:
 
 Name: Ali Zibanouri
-Email: zibanouri@example.com
+Email: zibanouri@gmail.com
 GitHub: @zibanouri
 
